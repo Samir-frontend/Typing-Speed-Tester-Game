@@ -1,6 +1,6 @@
 ⌨️ Typing Speed Tester Game
 
-A simple and interactive Typing Speed Tester built using HTML, CSS, and JavaScript. This project helps users test and improve their typing speed and accuracy in real time.
+ A simple and interactive Typing Speed Tester built using HTML, CSS, and JavaScript. This project helps users test and improve their typing speed and accuracy in real time.
 
 🚀 Features
 
@@ -28,7 +28,7 @@ A simple and interactive Typing Speed Tester built using HTML, CSS, and JavaScri
 
 🔗 Live Demo
 
-https://samir-frontend.github.io/Typing-Speed-Tester-Game/
+ https://samir-frontend.github.io/Typing-Speed-Tester-Game/
 
 📚 What I Learned
 
