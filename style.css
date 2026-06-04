@@ -15,8 +15,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
 }
 
 /* Smooth background color transition animation */
@@ -72,6 +73,7 @@ h1 {
     line-height: 1.6;
     text-align: left;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    user-select: none;
 }
 
 /* Character level highlighting styles */
@@ -140,10 +142,25 @@ textarea.time-up {
     text-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
 }
 
+/* Flashing text animation for victory alert */
+.flash-green {
+    animation: blink 0.5s linear infinite;
+    color: #00ff87;
+    text-shadow: 0 0 10px rgba(0, 255, 135, 0.5);
+}
+
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0.3; }
     100% { opacity: 1; }
+}
+
+/* Button layout framework wrapper */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 /* Common interactive button layout specs */
@@ -158,13 +175,24 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 255, 135, 0.3);
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Style swap for restart button to keep a distinguished look */
+#reset-btn {
+    background: linear-gradient(135deg, #ff3366, #ff6b6b);
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(255, 51, 102, 0.3);
 }
 
 button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 255, 135, 0.5);
     filter: brightness(1.1);
 }
+
+#start-btn:hover { box-shadow: 0 8px 20px rgba(0, 255, 135, 0.5); }
+#reset-btn:hover { box-shadow: 0 8px 20px rgba(255, 51, 102, 0.5); }
 
 button:active {
     transform: translateY(-1px);
@@ -175,12 +203,12 @@ button:active {
     display: none !important;
 }
 
-/* Media query setup for mobile optimization */
+/* Media query setup for mobile and tablet optimization */
 @media (max-width: 480px) {
     .container {
         padding: 20px 15px;
         margin: 10px;
-        width: 95%;
+        width: 100%;
     }
 
     h1 {
@@ -201,5 +229,16 @@ button:active {
         font-size: 0.9rem;
         flex-direction: column; 
         gap: 10px;
+        align-items: center;
+    }
+
+    .button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
     }
 }
