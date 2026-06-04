@@ -1,0 +1,205 @@
+/* Reset basic layout properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Base body styling with dynamic moving gradient background */
+body {
+    background: linear-gradient(-45deg, #0f0f13, #151b26, #1a1020, #0b1a12);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Smooth background color transition animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main app wrapper layout with dynamic neon glowing border animation */
+.container {
+    background-color: rgba(20, 20, 27, 0.9);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    border: 2px solid transparent;
+    background-image: linear-gradient(rgba(20, 20, 27, 0.9), rgba(20, 20, 27, 0.9)), 
+                      linear-gradient(135deg, #00f2fe, #4facfe, #b92b27, #1565c0, #00ff87);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-size: 400% 400%;
+    animation: borderGlow 8s linear infinite;
+}
+
+/* Smooth border color shifting animation */
+@keyframes borderGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header style configuration */
+h1 {
+    color: #00ff87;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(0, 255, 135, 0.4);
+    letter-spacing: 1px;
+}
+
+/* Display paragraph box styling */
+#text-to-type {
+    font-size: 1.2rem;
+    background: rgba(10, 10, 15, 0.7);
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Character level highlighting styles */
+#text-to-type span.correct {
+    color: #00ff87; 
+    text-shadow: 0 0 8px rgba(0, 255, 135, 0.6);
+}
+
+#text-to-type span.incorrect {
+    color: #ff3366; 
+    background: rgba(255, 51, 102, 0.25); 
+    border-radius: 3px;
+    text-shadow: 0 0 8px rgba(255, 51, 102, 0.6);
+}
+
+/* User interactive input area styling with pulsating glow effect on focus */
+textarea {
+    width: 100%;
+    height: 120px;
+    background: #0d0d12;
+    border: 2px solid #2a2a35;
+    border-radius: 10px;
+    color: #fff;
+    padding: 14px;
+    font-size: 1.1rem;
+    resize: none;
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+textarea:focus {
+    border-color: #00f2fe;
+    background: #111118;
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+    animation: pulseGlow 2s infinite alternate;
+}
+
+/* Pulsating input glow animation */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 15px rgba(0, 242, 254, 0.3); }
+    100% { box-shadow: 0 0 25px rgba(0, 242, 254, 0.6); }
+}
+
+/* Timeout visual alert for textarea */
+textarea.time-up {
+    border-color: #ff3366 !important;
+    background-color: #210d11 !important;
+    box-shadow: 0 0 25px rgba(255, 51, 102, 0.5) !important;
+    animation: none !important;
+}
+
+/* Real-time score metrics container */
+.results {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+/* Flashing text animation for timeout alert */
+.flash-red {
+    animation: blink 0.5s linear infinite;
+    color: #ff3366;
+    text-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+/* Common interactive button layout specs */
+button {
+    background: linear-gradient(135deg, #00ff87, #60efff);
+    color: #0a0a0f;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 255, 135, 0.3);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 255, 135, 0.5);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+/* Utility class to handle button toggling visibility */
+.hide {
+    display: none !important;
+}
+
+/* Media query setup for mobile optimization */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+        margin: 10px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #text-to-type {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    textarea {
+        height: 100px;
+        font-size: 1rem;
+    }
+
+    .results {
+        font-size: 0.9rem;
+        flex-direction: column; 
+        gap: 10px;
+    }
+}

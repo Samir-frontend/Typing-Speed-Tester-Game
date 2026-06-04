@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedyType - Test Your Speed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Tester</h1>
+        
+        <p id="text-to-type">The quick brown fox jumps over the lazy dog.</p>
+        
+        <textarea id="input-field" placeholder="Click 'Start Test' below to begin..." disabled></textarea>
+        
+        <div class="results">
+            <p>Time Left: <span id="timer">60</span>s</p>
+            <p>WPM: <span id="wpm">0</span></p>
+            <p>Accuracy: <span id="accuracy">100</span>%</p>
+        </div>
+
+        <button id="start-btn">Start Test</button>
+        <button id="reset-btn" class="hide">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
