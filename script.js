@@ -121,6 +121,7 @@ function startGame() {
     inputFieldEl.disabled = false; 
     inputFieldEl.focus();        
     startBtn.classList.add('hide'); 
+    resetBtn.classList.remove('hide'); // 🔄 UPGRADE: Game start hote hi restart button show ho jayega mid-game reset ke liye!
     
     // Start countdown timer
     timer = setInterval(startTimer, 1000);
@@ -189,6 +190,7 @@ inputFieldEl.addEventListener('input', () => {
 function endGame(isTimeUp) {
     clearInterval(timer);
     inputFieldEl.disabled = true; 
+    startBtn.classList.add('hide'); // Extra safety mapping
     resetBtn.classList.remove('hide'); 
 
     if (isTimeUp) {
@@ -197,7 +199,7 @@ function endGame(isTimeUp) {
         timerEl.parentElement.classList.add('flash-red');
         playGameOverSound(); // Trigger the buzzer sound
     } else {
-        // UPGRADED FEATURE: Direct Inline Green Styling for Input Box
+        // Direct Inline Green Styling for Input Box
         inputFieldEl.style.backgroundColor = "#dcfce7"; // Smooth light green background
         inputFieldEl.style.color = "#15803d";           // Dark green text color
         inputFieldEl.style.borderColor = "#22c55e";     // Sharp green border
@@ -210,15 +212,17 @@ function endGame(isTimeUp) {
     }
 }
 
-// Function to reset the game state
+// Function to reset the game state safely at any moment
 function resetGame() {
-    timeLeft = 60;
+    clearInterval(timer); // 🔄 UPGRADE: Agar chalu game me kisi ne dabaya toh running timer pehle clear hoga
     timer = null;
+    timeLeft = 60;
     totalCharactersTyped = 0;
     errors = 0;
     
-    // Clean up temporary style modifications
+    // Clean up temporary style modifications safely
     inputFieldEl.classList.remove('time-up', 'winner-state');
+    inputFieldEl.style = ""; // Clear out raw inline victory modifications if any
     timerEl.parentElement.classList.remove('flash-red', 'flash-green');
     
     inputFieldEl.value = "";
