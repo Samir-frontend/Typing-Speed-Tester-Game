@@ -28,7 +28,7 @@ A simple and interactive Typing Speed Tester built using HTML, CSS, and JavaScri
 
 🔗 Live Demo
 
-https://samir-frontend.github.io/typing-speed-tester/
+https://samir-frontend.github.io/Typing-Speed-Tester-Game/
 
 📚 What I Learned
 
@@ -41,6 +41,6 @@ https://samir-frontend.github.io/typing-speed-tester/
 
 👨‍💻 Author
 
-Samir Sheikh
+ Samir Sheikh
 
 
