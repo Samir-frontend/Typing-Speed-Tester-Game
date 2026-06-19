@@ -1,46 +1,80 @@
-⌨️ Typing Speed Tester Game
+<div align="center">
 
- A simple and interactive Typing Speed Tester built using HTML, CSS, and JavaScript. This project helps users test and improve their typing speed and accuracy in real time.
+<img width="100%" src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=12,13,14&height=170&section=header&text=⌨️%20Typing%20Speed%20Tester&fontSize=34&fontColor=fff&animation=fadeIn&fontAlignY=40&desc=Test%20Your%20WPM%20%26%20Accuracy%20in%20Real-Time&descSize=15&descAlignY=62"/>
 
-🚀 Features
+<a href="https://samir-frontend.github.io/Typing-Speed-Tester-Game/">
+  <img src="https://img.shields.io/badge/⚡%20Start%20Typing%20Test-FFA500?style=for-the-badge"/>
+</a>
 
-* Real-time typing speed calculation (WPM)
-* Accuracy tracking
-* Timer-based typing test
-* Random typing paragraphs
-* Responsive design for desktop and mobile
-* Clean and user-friendly interface
+<br/><br/>
 
-🛠️ Technologies Used
+<img src="https://img.shields.io/badge/HTML5-FF6B35?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-FFA500?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-FFD700?style=for-the-badge&logo=javascript&logoColor=black"/>
 
-* HTML5
-* CSS3
-* JavaScript (ES6)
+</div>
 
-🎯 How It Works
+---
 
-1. Start typing the displayed text.
-2. The timer begins automatically.
-3. Words Per Minute (WPM) and accuracy are calculated in real time.
-4. Complete the paragraph before the timer ends.
-5. View your final typing statistics.
+### ⚡ *How fast can you really type?*
 
+---
 
-🔗 Live Demo
+## 🎯 About
 
- https://samir-frontend.github.io/Typing-Speed-Tester-Game/
+A fun, **interactive typing speed game** that challenges users to type random text as fast and accurately as possible — tracking **WPM (Words Per Minute)** and **accuracy %** in real-time.
 
-📚 What I Learned
+---
 
-* DOM Manipulation
-* Event Handling
-* Timer Functions
-* String Comparison Logic
-* Responsive Web Design
-* JavaScript Game Logic
+## 🏆 Features
 
-👨‍💻 Author
+| 🟠 Feature | Description |
+|---|---|
+| ⏱️ Live Timer | Countdown timer starts on first keystroke |
+| 🔥 WPM Counter | Calculates words-per-minute in real-time |
+| 🎯 Accuracy Tracker | Highlights correct ✅ / incorrect ❌ characters |
+| 🔄 Restart Button | Instantly retry with a new passage |
+| 📱 Responsive | Smooth experience on any screen size |
 
- Samir Sheikh
+---
+
+## ⚙️ How It Works
+
+```javascript
+1. Random paragraph loads on screen
+2. User starts typing → timer begins ⏱️
+3. Each keystroke checked for accuracy ✅❌
+4. On finish → WPM + Accuracy % displayed 🏁
+```
+
+---
+
+## 🛠️ Built With
+
+<div align="center">
+
+![HTML5](https://img.shields.io/badge/-HTML5-FF6B35?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-FFA500?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-FFD700?style=flat-square&logo=javascript&logoColor=black)
+
+</div>
+
+---
+
+## 🚀 Test Your Speed Now
+
+**[🔥 Play the Typing Test →](https://samir-frontend.github.io/Typing-Speed-Tester-Game/)**
+
+---
+
+<div align="center">
+
+**Samir Sheikh** · Front-End Developer · 📍 Rawatbhata, Rajasthan
+[Portfolio](https://samir-frontend.github.io/Personal-Portfolio/) · [GitHub](https://github.com/Samir-frontend) · 📧 samirshiekh0808@gmail.com
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=12,13,14&height=60&section=footer"/>
+
+</div>
+
 
 
