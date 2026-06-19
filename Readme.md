@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=12,13,14&height=170&section=header&text=⌨️%20Typing%20Speed%20Tester&fontSize=34&fontColor=fff&animation=fadeIn&fontAlignY=40&desc=Test%20Your%20WPM%20%26%20Accuracy%20in%20Real-Time&descSize=15&descAlignY=62"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,13,14&height=170&section=header&text=⌨️%20Typing%20Speed%20Tester&fontSize=34&fontColor=fff&animation=twinkling&fontAlignY=40&desc=Test%20Your%20WPM%20%26%20Accuracy%20in%20Real-Time&descSize=15&descAlignY=62"/>
 
 <a href="https://samir-frontend.github.io/Typing-Speed-Tester-Game/">
   <img src="https://img.shields.io/badge/⚡%20Start%20Typing%20Test-FFA500?style=for-the-badge"/>
@@ -72,9 +72,11 @@ A fun, **interactive typing speed game** that challenges users to type random te
 **Samir Sheikh** · Front-End Developer · 📍 Rawatbhata, Rajasthan
 [Portfolio](https://samir-frontend.github.io/Personal-Portfolio/) · [GitHub](https://github.com/Samir-frontend) · 📧 samirshiekh0808@gmail.com
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=12,13,14&height=60&section=footer"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,13,14&height=60&section=footer"/>
 
 </div>
+
+
 
 
 
